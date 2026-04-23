@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="60" cy="100" r="45" fill="none" stroke="#2563EB" stroke-width="3"/>
+  <line x1="60" y1="30" x2="60" y2="170" stroke="#2563EB" stroke-width="2"/>
+  <line x1="15" y1="100" x2="105" y2="100" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="60" cy="60" r="4" fill="#F97316"/>
+  <circle cx="60" cy="100" r="5" fill="#F97316" filter="url(#glow)"/>
+  <circle cx="60" cy="140" r="4" fill="#F97316"/>
+  <circle cx="30" cy="100" r="4" fill="#F97316"/>
+  <circle cx="90" cy="100" r="4" fill="#F97316"/>
+  <line x1="60" y1="60" x2="85" y2="75" stroke="#2563EB" stroke-width="1.5"/>
+  <line x1="60" y1="140" x2="85" y2="125" stroke="#2563EB" stroke-width="1.5"/>
+  <line x1="60" y1="60" x2="35" y2="75" stroke="#2563EB" stroke-width="1.5"/>
+  <line x1="60" y1="140" x2="35" y2="125" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="130" y="95" font-family="Inter, SF Pro, PingFang SC, sans-serif" font-size="32" font-weight="700" fill="#1F2937">Finding</text>
+  <text x="130" y="120" font-family="Inter, SF Pro, PingFang SC, sans-serif" font-size="18" fill="#6B7280">Company</text>
+  <text x="130" y="150" font-family="Inter, SF Pro, PingFang SC, sans-serif" font-size="14" fill="#9CA3AF">Make Life Easy</text>
+</svg>
