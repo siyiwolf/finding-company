@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Technology - make life easy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .logo img {
+            height: 48px;
+            width: auto;
+        }
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            background: linear-gradient(90deg, #007AFF, #FF9500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .slogan {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.7);
+            font-style: italic;
+        }
+        main {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #fff, #007AFF, #FF9500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .tagline {
+            font-size: 1.5rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 3rem;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .product-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #007AFF;
+        }
+        .product-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .product-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #007AFF;
+        }
+        .product-card p {
+            color: rgba(255,255,255,0.7);
+            line-height: 1.6;
+        }
+        .directions {
+            margin-top: 4rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.03);
+            border-radius: 16px;
+        }
+        .directions h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #FF9500;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+        .tag {
+            background: rgba(0,122,255,0.2);
+            border: 1px solid #007AFF;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #007AFF;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../调研报告/户外运动智能硬件战略规划/2026-04-22/finding_technology_logo_v12.png" alt="Finding Technology Logo">
+                <span class="logo-text">Finding Technology</span>
+            </div>
+            <span class="slogan">make life easy</span>
+        </header>
+
+        <main>
+            <h1>智能硬件 · 户外运动 · 影像记录</h1>
+            <p class="tagline">用科技重新定义户外体验</p>
+
+            <div class="products">
+                <div class="product-card">
+                    <div class="product-icon">🥽</div>
+                    <h3>AR 智能眼镜</h3>
+                    <p>增强现实技术与运动数据的无缝融合，让信息触手可及</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">📷</div>
+                    <h3>AI 运动相机</h3>
+                    <p>智能识别运动场景，自动捕捉精彩瞬间</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">⌚</div>
+                    <h3>智能穿戴影像</h3>
+                    <p>手表、头盔、护目镜，全方位第一视角记录</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🏂</div>
+                    <h3>专业运动配件</h3>
+                    <p>滑雪、潜水、骑行，为极限运动而生</p>
+                </div>
+            </div>
+
+            <div class="directions">
+                <h2>产品方向</h2>
+                <div class="tags">
+                    <span class="tag">AR 眼镜</span>
+                    <span class="tag">AI 运动相机</span>
+                    <span class="tag">智能头盔</span>
+                    <span class="tag">智能手表影像</span>
+                    <span class="tag">无人机伴侣</span>
+                    <span class="tag">潜水相机</span>
+                    <span class="tag">滑雪护目镜</span>
+                    <span class="tag">智能手杖</span>
+                    <span class="tag">野生动物相机</span>
+                    <span class="tag">全地形移动影像平台</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Finding Technology. All rights reserved.</p>
+            <p>make life easy</p>
+        </footer>
+    </div>
+</body>
+</html>
